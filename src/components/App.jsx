@@ -7,6 +7,8 @@ function App() {
     displayTime(new Date().toLocaleTimeString());
   }
 
+  setInterval(showTime, 1000);
+
   return (
     <div className="container">
       <h2>{currentTime}</h2>
